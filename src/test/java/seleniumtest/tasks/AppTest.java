@@ -16,7 +16,7 @@ public class AppTest {
 	public void testSetUp() {
 		String chromePath = "/var/lib/jenkins/chromedriver";
 		System.setProperty("webdriver.chrome.driver", chromePath);
-		driver = new ChromeDriver(ChromeOptions);
+		driver = new ChromeDriver();
     //DesiredCapabilities capability = DesiredCapabilities.chrome();
 		//Webdriver driver = new RemoteWebDriver(new URL("http://jenkins-jenkins.oseapps.levvel-labs.io:4444/wd/hub"), capability);
 	}
