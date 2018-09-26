@@ -11,8 +11,6 @@ public class AppTest {
 
 	private WebDriver driver;
 	String appURL = "http://tasks-tasks-dev.oseapps.levvel-labs.io/";
-	ChromeOptions ChromeOptions = new ChromeOptions();
-	ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 
 	@BeforeClass
 	public void testSetUp() {
