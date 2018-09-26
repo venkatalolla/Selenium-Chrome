@@ -14,7 +14,7 @@ public class AppTest {
 
 	@BeforeClass
 	public void testSetUp() {
-		String chromePath = "/tmp/chromedriver";
+		String chromePath = "/var/lib/jenkins/chromedriver";
 		System.setProperty("webdriver.chrome.driver", chromePath);
 		driver = new ChromeDriver();
 	}
