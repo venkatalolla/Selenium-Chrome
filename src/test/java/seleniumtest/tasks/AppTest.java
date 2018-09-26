@@ -9,16 +9,16 @@ import org.testng.annotations.Test;
 
 public class AppTest {
 
-	//private WebDriver driver;
+	private WebDriver driver;
 	String appURL = "http://tasks-tasks-dev.oseapps.levvel-labs.io/";
 
 	@BeforeClass
 	public void testSetUp() {
-		//String chromePath = "/var/lib/jenkins/chromedriver";
-		//System.setProperty("webdriver.chrome.driver", chromePath);
-		//driver = new ChromeDriver();
-    DesiredCapabilities capability = DesiredCapabilities.chrome();
-		Webdriver driver = new RemoteWebDriver(new URL("http://jenkins-jenkins.oseapps.levvel-labs.io:4444/wd/hub"), capability);
+		String chromePath = "/var/lib/jenkins/chromedriver";
+		System.setProperty("webdriver.chrome.driver", chromePath);
+		driver = new ChromeDriver();
+    //DesiredCapabilities capability = DesiredCapabilities.chrome();
+		//Webdriver driver = new RemoteWebDriver(new URL("http://jenkins-jenkins.oseapps.levvel-labs.io:4444/wd/hub"), capability);
 	}
 
 	@Test
