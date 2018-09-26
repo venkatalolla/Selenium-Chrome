@@ -8,26 +8,26 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class AppTest {
-	
-	private WebDriver driver; 
+
+	private WebDriver driver;
 	String appURL = "http://tasks-tasks-dev.oseapps.levvel-labs.io/";
 
 	@BeforeClass
 	public void testSetUp() {
-		System.setProperty("webdriver.chrome.driver", "/Users/suryalolla/Downloads/selenium-java-3.14.0/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver");
 		driver = new ChromeDriver();
 	}
-	
+
 	@Test
 	public void verifyOpenShiftTasksPageTittle() {
 		driver.navigate().to(appURL);
 		String getTitle = driver.getTitle();
 		Assert.assertEquals(getTitle, "OpenShift Demo Tasks");
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}
-	
+
 }
