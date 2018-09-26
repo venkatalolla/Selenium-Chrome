@@ -18,7 +18,7 @@ public class AppTest {
 		System.setProperty("webdriver.chrome.driver", chromePath);
 		ChromeOptions ChromeOptions = new ChromeOptions();
     ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(ChromeOptions);
     //DesiredCapabilities capability = DesiredCapabilities.chrome();
 		//Webdriver driver = new RemoteWebDriver(new URL("http://jenkins-jenkins.oseapps.levvel-labs.io:4444/wd/hub"), capability);
 	}
