@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Example test run" duration-ms="9108" started-at="2018-09-25T23:36:46Z" finished-at="2018-09-25T23:36:55Z">
+    <groups>
+    </groups>
+    <test name="Simple Test" duration-ms="9108" started-at="2018-09-25T23:36:46Z" finished-at="2018-09-25T23:36:55Z">
+      <class name="seleniumtest.tasks.AppTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:seleniumtest.tasks.AppTest@4bbfb90a]" name="testSetUp" is-config="true" duration-ms="1500" started-at="2018-09-25T23:36:46Z" finished-at="2018-09-25T23:36:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="verifyOpenShiftTasksPageTittle()[pri:0, instance:seleniumtest.tasks.AppTest@4bbfb90a]" name="verifyOpenShiftTasksPageTittle" duration-ms="7504" started-at="2018-09-25T23:36:47Z" finished-at="2018-09-25T23:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenShiftTasksPageTittle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumtest.tasks.AppTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="86" started-at="2018-09-25T23:36:55Z" finished-at="2018-09-25T23:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumtest.tasks.AppTest -->
+    </test> <!-- Simple Test -->
+  </suite> <!-- Example test run -->
+</testng-results>
