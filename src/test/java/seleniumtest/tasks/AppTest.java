@@ -14,7 +14,7 @@ public class AppTest {
 
 	@BeforeClass
 	public void testSetUp() {
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/tools/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/tmp/chromedriver");
 		driver = new ChromeDriver();
 	}
 
